@@ -26,7 +26,6 @@ function parcela(preco){
     const frac = parc.toString().split('.')[1].slice(0,2);
 
     precoParcela = `${int},${frac}`;
-    console.log(precoParcela);
     
     return <>{int} <sup style={{marginLeft:'5px'}}>{frac}</sup></>
 }
@@ -36,7 +35,7 @@ export default function ProductMain(props){
     /* const precoParcela */
 
     /* O link abaixo envia, pela barra de endereço, os dados do produto clicado e, com base nesses dados, renderiza a página.*/
-    return <Link href={`http://localhost:3000/produtos?nome=${props.nome}&thumb=${props.thumb}&preco=${precoRefeito}&parc=${precoParcela}${props.frete ? `&frete=${props.frete}` : ''}&estrelas=${props.estrelas}&desc=${props.desc}`} passHref> 
+    return <Link href={`./produtos?nome=${props.nome}&thumb=${props.thumb}&preco=${precoRefeito}&parc=${precoParcela}${props.frete ? `&frete=${props.frete}` : ''}&estrelas=${props.estrelas}&desc=${props.desc}`} passHref> 
         <div className={styles.content} title={props.nome}>
                 {/* A mensagem de bem avaliado só é exibida se for avaliação máxima*/}
                 {props.estrelas === 5 ? <div className={styles.avaliado}>★ BEM AVALIADO</div> : ''}

@@ -40,7 +40,7 @@ Olá!
 - Simulação de uma página de e-commerce responsiva com a possibilidade escolher um produto e ir à página de compra e apresentação de mais informações.
 
 *Funcionalidades objetivas e técnicas:
-- A página inicial apresenta os 'cards' dos produtos a partir de uma chamada back-end e os renderiza com bases nas informações passadas;
+- A página inicial apresenta os 'cards' dos produtos a partir de uma chamada back-end consumindo uma API e os renderiza com bases nas informações passadas;
 - O layout da página e alguns dos elementos "menores" são construídos a partir de componentes;
 - Os produtos que têm 5 estrelas (valor máximo), aparecem em seu card a informação "bem avaliado";
 - Os produtos com frente grátis têm essa informação já apresentada na parte inferior do 'card';
