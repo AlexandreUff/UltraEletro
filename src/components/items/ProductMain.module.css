@@ -1,0 +1,63 @@
+.content{
+    border: 1px #bebebe solid;
+    border-radius: 5px;
+
+    width: 200px;
+    height: 252px;
+    padding: 5px;
+    margin: 10px;
+    transition: .3s;
+    cursor: pointer;
+
+    position: relative;
+}
+
+.content .avaliado{
+    position: absolute;
+    top: -7px;
+    right: -10px;
+
+    background-color: var(--mainColor);
+    color: white;
+    font-size: .7rem;
+
+    padding: 0px 2px;
+    border-radius: 5px;
+
+    z-index: 1;
+}
+
+.content:hover{
+    transform: scale(1.08);
+    box-shadow: 2px 2px 8px #00000071;
+}
+
+/* .content img{
+    width: 100%;
+    margin: 0px auto;
+} */
+
+.content h3, .content h4, .content p {
+    margin: 0;
+    padding: 0;
+    margin-top: 5px;
+}
+
+.content h3{
+    font-weight: 300;
+    text-align: center;
+    font-size: .98rem;
+}
+
+.content .freteGratis{
+    display: flex;
+    justify-content: center;
+    color: var(--footerColor);
+    height: 18px;
+}
+
+.content .fretePago{
+    color: gray;
+    font-size: .8rem;
+    height: 18px;
+}

@@ -1,0 +1,166 @@
+.content{
+    padding: 10px 100px;
+}
+
+/* .content img {
+    width: 45%;
+    border-radius: 5px;
+} */
+
+.avaliacao svg{
+    width: 30px;
+    stroke: var(--footerColor);
+    stroke-width: 1px;
+    color: white;
+}
+
+.avaliacao.marcado svg{
+    color: var(--footerColor);
+}
+
+.prodInfos{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.prodDesc {
+    margin-left: 20px;
+}
+
+.prodDesc h3{
+    font-size: 2.5rem;
+}
+
+.prodDesc h4{
+    font-size: 2.5rem;
+    margin: 0;
+    color: var(--footerColor);
+}
+
+.prodDesc h5{
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.prodDesc .payModes{
+    color: var(--asideColor);
+}
+
+.prodDesc .freteArea{
+    color: var(--asideColor);
+    display: flex;
+    align-items: center;
+}
+
+.prodDesc .freteArea svg{
+    width: 25px;
+    margin-right: 10px;
+}
+
+.prodDesc button{
+    border: 0px;
+    border-radius: 5px;
+
+    color: white;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 5px;
+    min-width: 200px;
+    min-height: 50px;
+
+    transition: .1s;
+    cursor: pointer;
+}
+
+.prodDesc button svg{
+    width: 20px;
+}
+
+.prodDesc .comprar{
+    background-color: var(--asideColor);
+}
+
+.prodDesc .addCar{
+    background-color: var(--mainColor);
+}
+
+.prodDesc .qtdProd{
+    margin: 10px 5px;
+}
+
+.prodDesc .qtdProd input{
+    margin-left: 5px;
+    width: 60px;
+}
+
+.prodDesc button:hover{
+    opacity: .8;
+}
+
+.statusVendedor{
+    border: 1px solid #d4d4d4;
+    margin-top: 20px;
+    border-radius: 5px;
+    padding: 15px;
+
+    width: 82%;
+}
+
+.statusVendedor > div {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    font-size: .8rem;
+}
+
+.icoVendedor{
+    color: var(--asideColor);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 5px;
+}
+
+.icoVendedor svg{
+    width: 25px;
+}
+
+
+/*Responsividade*/
+@media(max-width: 1000px){
+    .content {
+        padding: 10px 10px;
+    }
+
+    .prodInfos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .prodDesc {
+        margin-left: 0;
+    }
+
+    .content img {
+        width: 65%;
+    }
+}
+
+@media(max-width: 500px){
+    .content img {
+        width: 85%;
+    }
+
+    .prodDesc button{
+        width: 100%;
+        margin: 2px;
+    }
+
+    .statusVendedor{
+        width: 100%;
+    }
+}

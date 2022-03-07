@@ -1,0 +1,53 @@
+.content{
+    flex-grow: 1;
+    margin: 0px 20px;
+    height: 35px;
+}
+
+/* Aproveita-se o display flex */
+
+.content input, .content button{
+    height: 100%;
+    box-shadow: 0px 2px 2px #00000044;
+    border: 0px;
+}
+
+.content input{
+    width:90%;
+}
+
+.content button{
+    width:7%;
+    cursor: pointer;
+}
+
+.content button svg{
+    width: 12px;
+}
+
+/*Responsividade*/
+@media(max-width:865px){
+    .content{
+        margin: 0px 10px;
+    }
+
+    .content button{
+        width:9%;
+    }
+}
+
+@media(max-width:500px){
+    .content{
+        margin: 0px 5px;
+        flex-grow: 0;
+        width: 98%;
+    }
+
+    .content input{
+        width:90%;
+    }
+
+    .content button{
+        width:10%;
+    }
+}

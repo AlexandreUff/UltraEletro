@@ -1,0 +1,39 @@
+.content ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    list-style: none;
+    background-color: var(--secondaryColor);
+    padding: 0px 100px;
+    margin: 0;
+}
+
+.content ul li{
+    margin: 0px 10px;
+}
+
+.content button{
+    background-color: var(--secondaryColor);
+    cursor: pointer;
+    border: 0px;
+    font-size: 1rem;
+    color: var(--asideColor);
+}
+
+/*Responsividade*/
+@media(max-width:865px){
+    .content ul{
+        padding: 0px 10px;
+    }
+
+    .content button{
+        font-size: 0.8rem;
+    }
+}
+
+@media(max-width:510px){
+    .content ul{
+        justify-content: end;
+    }
+}

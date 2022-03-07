@@ -1,0 +1,23 @@
+:root{
+  --mainColor: #FFC900;
+  --secondaryColor: #FFF89A;
+  --asideColor: #086E7D;
+  --footerColor: #1A5F7A;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}

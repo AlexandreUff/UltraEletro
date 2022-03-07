@@ -1,0 +1,37 @@
+.header{
+    background-color: var(--mainColor);
+    padding: 0px 100px;
+
+    display: flex;
+    align-items: center;
+}
+
+.header img{
+    width: 25%;
+}
+
+.header .userArea{
+    align-self: flex-start;
+    margin-top: 20px;
+    color: white;
+}
+
+/*Responsivo*/
+@media(max-width:1109px){
+    .header{
+        padding: 10px 10px;
+    }
+}
+
+@media(max-width:865px){
+    .header{
+        display: block;
+        /* padding: 10px 10px; */
+    }
+
+    .header .userArea{
+        display:flex;
+        justify-content:flex-end;
+        margin-top: 10px;
+    }
+}
