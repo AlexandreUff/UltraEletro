@@ -35,7 +35,7 @@ export default function ProductMain(props){
     /* const precoParcela */
 
     /* O link abaixo envia, pela barra de endereço, os dados do produto clicado e, com base nesses dados, renderiza a página.*/
-    return <Link href={`./produtos?nome=${props.nome}&thumb=${props.thumb}&preco=${precoRefeito}&parc=${precoParcela}${props.frete ? `&frete=${props.frete}` : ''}&estrelas=${props.estrelas}&desc=${props.desc}`} passHref> 
+    return <Link href={`${window.location}/produtos?nome=${props.nome}&thumb=${props.thumb}&preco=${precoRefeito}&parc=${precoParcela}${props.frete ? `&frete=${props.frete}` : ''}&estrelas=${props.estrelas}&desc=${props.desc}`} passHref> 
         <div className={styles.content} title={props.nome}>
                 {/* A mensagem de bem avaliado só é exibida se for avaliação máxima*/}
                 {props.estrelas === 5 ? <div className={styles.avaliado}>★ BEM AVALIADO</div> : ''}

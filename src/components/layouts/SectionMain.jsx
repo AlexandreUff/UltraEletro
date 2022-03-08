@@ -13,7 +13,7 @@ export default function SectionMain(){
         let renderizaProds = [];
 
         useEffect(()=>{
-                fetch('./api/produtos')
+                fetch(`${window.location}/api/produtos`)
                 .then(resp => resp.json())
                 .then(setProdutos)
         },[]);
