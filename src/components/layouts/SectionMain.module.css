@@ -105,3 +105,10 @@
         cursor: pointer;
     }
 }
+
+/*Responsividade Vertical*/
+@media(max-height: 360px){
+    .content .floatOptions{
+        top: 170px;
+    }
+}
